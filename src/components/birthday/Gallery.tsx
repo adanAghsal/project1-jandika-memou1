@@ -60,7 +60,7 @@ export function Gallery() {
                 alt={`Kenangan ${i + 1}`}
                 loading="lazy"
                 decoding="async"
-                className="aspect-square w-full rounded-sm border-4 border-sakura/40 bg-night/10 object-contain"
+                className="aspect-square w-full rounded-sm border-4 border-sakura/40 object-cover"
               />
               <p className="mt-3 font-hand text-2xl text-ink">{g.title}</p>
               {/* <p className="text-sm text-ink/70">{g.caption}</p> */}
