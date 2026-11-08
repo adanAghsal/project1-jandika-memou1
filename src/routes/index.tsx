@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState } from "react";
-import { heroImage } from "@/lib/images";
 import { Hero } from "@/components/birthday/Hero";
 import { Story } from "@/components/birthday/Story";
 import { Gallery } from "@/components/birthday/Gallery";
@@ -13,18 +12,7 @@ const siteUrl = import.meta.env["VITE_SITE_URL"];
 const socialImage = siteUrl ? new URL("/og-image.jpg", siteUrl).href : "/og-image.jpg";
 
 export const Route = createFileRoute("/")({
-  ssr: false,
   head: () => ({
-    links: [
-      {
-        rel: "preload",
-        as: "image",
-        href: heroImage.src,
-        imageSrcSet: heroImage.srcSet,
-        imageSizes: "100vw",
-        fetchPriority: "high",
-      },
-    ],
     meta: [
       { name: "twitter:image", content: socialImage },
       { property: "og:image:width", content: "1200" },

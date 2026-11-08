@@ -98,22 +98,16 @@ export function Hero({ onStart }: { onStart: () => void }) {
         >
           for {birthday.recipientName} ♡ {birthday.birthdayDate}
         </motion.p> */}
-        <motion.h1
-          initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ delay: 0.6, duration: 1.6 }}
+        <h1
           className="max-w-4xl font-display text-5xl font-semibold italic leading-tight text-cream text-glow md:text-7xl"
         >
           {birthday.heroTitle} <span className="text-sakura">♡</span>
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.4, duration: 1.4 }}
+        </h1>
+        <p
           className="mt-6 max-w-xl text-lg text-cream/100 text-glow md:text-xl"
         >
           {birthday.heroSubtitle}
-        </motion.p>
+        </p>
         <motion.button
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
