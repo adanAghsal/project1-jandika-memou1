@@ -66,7 +66,7 @@ export function Wishes() {
           </button>
         ))}
       </div>
-      <div className="absolute inset-x-0 bottom-16 z-20 flex justify-center px-6">
+      <div className="pointer-events-none absolute inset-x-0 bottom-16 z-20 flex justify-center px-6">
         <AnimatePresence mode="wait">
           {active !== null && (
             <motion.p
