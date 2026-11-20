@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState } from "react";
 import { Hero } from "@/components/birthday/Hero";
 import { Story } from "@/components/birthday/Story";
-import { Gallery } from "@/components/birthday/Gallery";
+// import { Gallery } from "@/components/birthday/Gallery"; // Arsip: archive/chapter-iii/Gallery.tsx.txt
+import { LittleThings } from "@/components/birthday/LittleThings";
 import { Wishes } from "@/components/birthday/Wishes";
 import { Letter } from "@/components/birthday/Letter";
 import { Finale } from "@/components/birthday/Finale";
@@ -44,7 +45,8 @@ function Index() {
           }}
         />
         <Story ref={storyRef} />
-        <Gallery />
+        {/* <Gallery /> */}
+        <LittleThings />
         <Wishes />
         <Letter open={letterOpen} setOpen={setLetterOpen} />
         <Finale

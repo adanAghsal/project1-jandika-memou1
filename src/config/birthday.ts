@@ -1,6 +1,5 @@
 // ✿ Personalize everything here — no other file needs editing.
-import { imageVariants } from "@/lib/images";
-import songs from "@/assets/mulfanart.mp3";
+import songs from "@/assets/LANY-You.mp3";
 
 export const birthday = {
   recipientName: "Dara",
@@ -18,27 +17,32 @@ export const birthday = {
     "kehadiranmu telah menjadi bagian kecil dari banyak hal baik.",
     "Someone is wishing you well, quietly. ♡",
   ],
-  // Replace with your own photos (import them above, or use https URLs).
-  gallery: [
-    {
-      image: imageVariants("foto1"),
-      thumbnail: imageVariants("foto1", true),
-      title: "click me",
-      // caption: "Di antara rintik hujan hari itu, ada senyummu yang diam-diam membuatku jatuh hati."
-    },
-    {
-      image: imageVariants("foto2"),
-      thumbnail: imageVariants("foto2", true),
-      title: "click me",
-      // caption: "Awalnya hanya dua orang yang ingin saling mengenal, lalu perlahan kamu menjadi seseorang yang istimewa."
-    },
-    {
-      image: imageVariants("foto3"),
-      thumbnail: imageVariants("foto3", true),
-      title: "click me",
-      // caption: "Empat pose sederhana, tapi setiap fotonya menyimpan alasan untuk selalu mengingat kita."
-    },
-  ],
+  // Chapter III lama beserta konfigurasi fotonya: archive/chapter-iii/.
+  littleThings: {
+    title: "Little Things That Matter",
+    intro: "Beberapa hal sederhana, yang ingin kusampaikan hari ini.",
+    signoff: "Dari seseorang yang mendoakanmu. ♡",
+    notes: [
+      {
+        id: "smile",
+        title: "Senyummu",
+        message:
+          "Senyummu layak menemani hari yang istimewa ini. Ada seseorang yang ikut bahagia saat kamu bahagia.",
+      },
+      {
+        id: "presence",
+        title: "Kehadiranmu",
+        message:
+          "Kamu tidak perlu menjadi siapa-siapa selain dirimu sendiri untuk berarti. Hari ini, kehadiranmu layak dirayakan.",
+      },
+      {
+        id: "kindness",
+        title: "Kebaikanmu",
+        message:
+          "Kebaikan yang kamu bawa adalah salah satu hal yang layak dirayakan hari ini. Hal-hal kecil yang kamu lakukan tetap punya arti.",
+      },
+    ],
+  },
   birthdayWishes: [
     "Semoga tidak ada musim yang membuatmu lupa bahwa kamu selalu punya kesempatan untuk tumbuh dan kembali mekar.",
     "Semoga langkah-langkah kecilmu membawamu ke tempat-tempat yang selama ini hanya berani kamu bayangkan.",
